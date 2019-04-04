@@ -220,6 +220,10 @@ footer{
 		flex-flow: column wrap;
 	}
 
+	p{
+		margin: 15px 0;
+	}
+
 	header{
 		nav{
 			width: 100%;
@@ -228,14 +232,63 @@ footer{
 	}
 
 	.one{
+		width: 100%;
+		display: flex;
+		flex-flow: column wrap;
 		
-
 		img{
-			justify-content: center;
+			margin: 0 20% 10%;
 				
 		}
 	}
 
+	.two{
+		h2{
+			margin-top: 15px;
+		} 
+
+		p{
+			margin: 15px 0;
+		}
+
+	}
+
+	.bottom-content{
+		
+		display: flex;
+		flex-flow: column wrap;
+		align-items: flex-start;
+	
+		
+		.three{
+			width:100%;
+			
+		}
+	
+		.four{
+			width:100%;
+			
+			li {
+				padding: 15px;
+				margin: 15px 20px;
+				display: flex;
+				border-bottom: @dots;
+			}
+			
+		}
+	}
+
+	footer{
+		ul{
+			flex-wrap: wrap;
+			margin: 0 auto;
+		}
+
+		li{
+			font-size: 1.22rem;
+		}
+	}
+	
 
 }
 
