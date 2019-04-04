@@ -1,1 +1,317 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+p,
+li {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  margin: 15px;
+  line-height: 25px;
+}
+h2 {
+  font-size: 3rem;
+  margin-bottom: 4%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+header {
+  width: 100%;
+  margin: 30px 0;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 2px dotted #fa8072;
+}
+header nav a {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  text-decoration: none;
+  margin: 10px 20px;
+}
+.top-content {
+  color: white;
+  background: #333333;
+  padding: 50px;
+  border-radius: 20px;
+}
+.top-content img {
+  width: 250px;
+  height: 370px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px dotted #fa8072;
+}
+.top-content h1 {
+  font-size: 5rem;
+  margin-bottom: 25px;
+}
+.top-content .two {
+  border-top: 2px dotted #fa8072;
+  padding-top: 10px;
+}
+.top-content .btn-container {
+  margin-top: 25px;
+}
+.top-content .btn-container .btn {
+  display: block;
+  background: #fa8072;
+  width: 200px;
+  height: 35px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.top-content .btn-container .btn:hover {
+  background: lightgray;
+  color: black;
+}
+.bottom-content {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.bottom-content .three {
+  width: 47%;
+  margin: 5% 0;
+  border-left: 2px dotted #fa8072;
+  border-right: 2px dotted #fa8072;
+  padding: 20px;
+}
+.bottom-content .four {
+  width: 47%;
+  margin: 5% 0;
+  border-left: 2px dotted #fa8072;
+  border-right: 2px dotted #fa8072;
+  padding: 20px;
+}
+.bottom-content .four li {
+  padding: 15px;
+  margin: 15px 20px;
+  display: flex;
+  border-bottom: 2px dotted #fa8072;
+}
+footer {
+  width: 100%;
+  background: black;
+  color: white;
+  font-size: 1.25rem;
+  border-radius: 20px 20px 0 0;
+}
+footer ul {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+footer h6 {
+  margin: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  p {
+    margin: 15px 0;
+  }
+  header nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .one {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .one img {
+    margin: 0 20% 10%;
+  }
+  .two h2 {
+    margin-top: 15px;
+  }
+  .two p {
+    margin: 15px 0;
+  }
+  .bottom-content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+  }
+  .bottom-content .three {
+    width: 100%;
+  }
+  .bottom-content .four {
+    width: 100%;
+  }
+  .bottom-content .four li {
+    padding: 15px;
+    margin: 15px 20px;
+    display: flex;
+    border-bottom: 2px dotted #fa8072;
+  }
+  footer ul {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  footer li {
+    font-size: 1.22rem;
+  }
+}
